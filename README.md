@@ -114,3 +114,4 @@ brand.roncarupano.com
 ```
 
 La configuración requiere crear el registro DNS correspondiente y añadir el dominio en **Settings → Pages → Custom domain**.
+GitHub Pages deployment enabled.
