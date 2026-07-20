@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "version": "V.0",
+    "status": "Borrador de migración",
+    "source": "Manual de Marca Ron Carúpano, 2021",
+    "updated": "Julio 2026"
+  },
+  "products": [
+    {
+      "id": "legendario",
+      "name": "Ron Carúpano Legendario",
+      "shortName": "Legendario",
+      "category": "Prestige / Colección",
+      "age": "25 años",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/legendario.webp",
+      "description": "Ron Viejo de Colección de lote único, con 25 años de añejamiento cerrado, edición limitada y numerada.",
+      "tasting": "Ámbar con destellos amarillos. Piña fermentada, caramelo, cacao, vainilla, café y tostados. Final sutil y elegante.",
+      "serve": "Copa balón, seco o con un cristal de hielo.",
+      "role": "Máxima expresión de colección y símbolo de exclusividad de la casa."
+    },
+    {
+      "id": "xo",
+      "name": "Ron Carúpano X.O.",
+      "shortName": "X.O.",
+      "category": "Prestige / Colección",
+      "age": "Reservas antiguas",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/xo.webp",
+      "description": "Ron Extra Viejo de Antología elaborado con madres de reservas antiguas privadas de familia, en edición limitada.",
+      "tasting": "Madera, caramelo, avellanas, almendras, merey, durazno, papelón, chocolate y tabaco.",
+      "serve": "Copa balón, seco o con un cristal de hielo.",
+      "role": "Expresión de refinamiento, legado familiar y profundidad sensorial."
+    },
+    {
+      "id": "zafra-1991",
+      "name": "Ron Carúpano Zafra 1991",
+      "shortName": "Zafra 1991",
+      "category": "Prestige / Colección",
+      "age": "Reserva 1991",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/zafra-1991.webp",
+      "description": "Edición especial creada a partir de madres de reservas de destilados embarrilados en 1991.",
+      "tasting": "Pastel de piña y coco, nueces, avellanas, almendras, naranja confitada y flores amarillas.",
+      "serve": "Copa balón, seco o con un cristal de hielo.",
+      "role": "Edición de añada para conocedores y ocasiones memorables."
+    },
+    {
+      "id": "carupano-21",
+      "name": "Ron Carúpano 21",
+      "shortName": "Carúpano 21",
+      "category": "Ultra-premium",
+      "age": "Hasta 21 años",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/carupano-21.webp",
+      "description": "Ron Viejo con madres de reservas limitadas de hasta 21 años de envejecimiento.",
+      "tasting": "Frutos rojos macerados, pasas, dátiles, coco, naranja, sarrapia, madera, canela, café, tabaco y chocolate negro.",
+      "serve": "Vaso corto en las rocas con un gajo de naranja.",
+      "role": "Puerta de entrada al lujo de alta gama y a la complejidad del portafolio."
+    },
+    {
+      "id": "carupano-18",
+      "name": "Ron Carúpano 18",
+      "shortName": "Carúpano 18",
+      "category": "Súper-premium",
+      "age": "Hasta 18 años",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/carupano-18.webp",
+      "description": "Ron Extra Viejo con largo añejamiento cerrado y madres de reservas limitadas de hasta 18 años.",
+      "tasting": "Frutos confitados, madera moderada, almendras, miel, higos y chocolate.",
+      "serve": "Vaso corto en las rocas.",
+      "role": "Equilibrio entre sofisticación, accesibilidad y consumo social de mayor consideración."
+    },
+    {
+      "id": "carupano-12",
+      "name": "Ron Carúpano 12",
+      "shortName": "Carúpano 12",
+      "category": "Premium",
+      "age": "Hasta 12 años",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/carupano-12.webp",
+      "description": "Ron Viejo con madres de reservas especiales de hasta 12 años de envejecimiento.",
+      "tasting": "Flores rojas, melaza, caramelo, miel, maple, ciruela, canela, clavo y madera húmeda.",
+      "serve": "En las rocas o en vaso largo con agua mineral, soda o aguakina y limón.",
+      "role": "Expresión premium versátil para el anfitrión y el consumidor que profundiza en la categoría."
+    },
+    {
+      "id": "carupano-6",
+      "name": "Ron Carúpano 6",
+      "shortName": "Carúpano 6",
+      "category": "Estándar",
+      "age": "Hasta 6 años",
+      "abv": "40° G.L.",
+      "image": "assets/images/products/carupano-6.webp",
+      "description": "Ron Viejo de carácter accesible con madres de reservas especiales de hasta 6 años.",
+      "tasting": "Flores blancas, melaza, caramelo, salinidad, madera ligera, pasas y frutos secos.",
+      "serve": "Vaso largo con limón y refresco de cola, o con hielo y aguakina.",
+      "role": "Entrada al universo de la marca y principal expresión de socialización y mezcla."
+    }
+  ],
+  "colors": [
+    {"name": "Negro Carúpano", "hex": "#100C0A", "use": "Fondos principales y comunicación premium"},
+    {"name": "Dorado", "hex": "#A88650", "use": "Acentos, titulares y detalles de prestigio"},
+    {"name": "Marfil", "hex": "#F2EDE5", "use": "Fondos claros, texto sobre negro y respiración visual"},
+    {"name": "Marrón oscuro", "hex": "#493326", "use": "Texturas, materiales y profundidad"},
+    {"name": "Gris cálido", "hex": "#6F6D63", "use": "Información secundaria y aplicaciones neutrales"},
+    {"name": "Ámbar", "hex": "#A64B24", "use": "Acento inspirado en el líquido y el portafolio"}
+  ]
+}
