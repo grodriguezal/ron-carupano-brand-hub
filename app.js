@@ -118,6 +118,45 @@ function setupFilters() {
   });
 }
 
+function setupLogoThemes() {
+  const preview = $('.logo-preview');
+  if (!preview) return;
+  const logo = $('img', preview);
+  $$('[data-logo-theme]').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.classList.contains('active')));
+    button.addEventListener('click', () => {
+      $$('[data-logo-theme]').forEach(item => {
+        item.classList.remove('active');
+        item.setAttribute('aria-pressed', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
+      preview.dataset.theme = button.dataset.logoTheme;
+      logo.src = button.dataset.logoSrc;
+    });
+  });
+}
+
+function setupResourceFilters() {
+  const buttons = $$('[data-resource-filter]');
+  const resources = $$('[data-resource-category]');
+  if (!buttons.length) return;
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.dataset.resourceFilter;
+      buttons.forEach(item => {
+        const active = item === button;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-pressed', String(active));
+      });
+      resources.forEach(resource => {
+        const visible = category === 'all' || resource.dataset.resourceCategory === category;
+        resource.classList.toggle('resource-hidden', !visible);
+      });
+    });
+  });
+}
+
 function setupToggles() {
   $$('[data-toggle]').forEach(button => {
     const target = document.getElementById(button.dataset.toggle);
@@ -232,6 +271,8 @@ function getLuminance(hex) {
 loadData();
 setupDialog();
 setupFilters();
+setupLogoThemes();
+setupResourceFilters();
 setupToggles();
 setupMenu();
 setupNavigationObserver();
