@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#100c0a">
   <title>Ron Carúpano · Brand Hub</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v01.css">
   <script defer src="app.js"></script>
 </head>
 <body>
@@ -114,11 +115,25 @@
       </div>
 
       <div class="alchemy-proof searchable" data-search="alquimia microclima manantial caña azúcar doc ron venezuela maestría">
-        <div class="alchemy-intro"><div class="eyebrow">La alquimia perfecta</div><h3>Naturaleza, materia, tiempo y criterio.</h3><p>La diferencia no proviene de un único ingrediente, sino de cuatro condiciones que trabajan juntas en Hacienda Altamira.</p></div>
-        <div class="proof-grid"><article><span>01</span><h4>Microclima excepcional</h4><p>La baja altitud, la humedad y las brisas del Caribe intensifican el intercambio entre el destilado y el roble.</p></article><article><span>02</span><h4>Agua pura de manantial</h4><p>El agua de la destilería aporta pureza y protege el perfil final de olores o sabores indeseados.</p></article><article><span>03</span><h4>Alcohol de caña de azúcar</h4><p>La alta sacarosa de la caña permite obtener una melaza de calidad para construir destilados expresivos.</p></article><article><span>04</span><h4>Maestría + DOC</h4><p>Más de 260 años de experiencia y la Denominación de Origen Controlada Ron de Venezuela sostienen un estándar verificable.</p></article></div>
+        <header class="alchemy-intro"><div><div class="eyebrow">La alquimia perfecta</div><h3>Cuatro fuerzas.<br>Un carácter irrepetible.</h3></div><p>Selecciona cada fuerza para descubrir cómo el origen se convierte en una ventaja sensorial.</p></header>
+        <div class="alchemy-dispatcher">
+          <div class="alchemy-tabs" role="tablist" aria-label="Fuerzas de la alquimia perfecta">
+            <button type="button" role="tab" aria-selected="true" data-alchemy="microclima"><span>01</span>Microclima</button>
+            <button type="button" role="tab" aria-selected="false" data-alchemy="agua"><span>02</span>Agua</button>
+            <button type="button" role="tab" aria-selected="false" data-alchemy="cana"><span>03</span>Caña</button>
+            <button type="button" role="tab" aria-selected="false" data-alchemy="maestria"><span>04</span>Maestría</button>
+          </div>
+          <article class="alchemy-stage" aria-live="polite">
+            <img id="alchemy-image" src="assets/images/editorial/05062026-DSC05306.webp" alt="Ron Carúpano en el entorno costero de Macarapana">
+            <div class="alchemy-stage-copy"><span id="alchemy-number">01 / ENTORNO</span><h4 id="alchemy-title">Microclima excepcional</h4><p id="alchemy-description">Baja altitud, humedad y brisas del Caribe intensifican el intercambio entre el destilado y el roble.</p><strong id="alchemy-proof">El Caribe acelera la transformación; la maestría decide el equilibrio.</strong></div>
+          </article>
+        </div>
       </div>
 
-      <div class="mastery-film searchable" data-search="video maestría ronera carmen equipo mezcla barricas"><div class="film-copy"><div class="eyebrow">Maestría ronera</div><h3>El criterio que convierte complejidad en equilibrio.</h3><p>Conoce el trabajo humano detrás de cada reserva: selección, memoria sensorial, mezcla y una relación cotidiana con el tiempo.</p><a class="button ghost" href="https://youtu.be/9rbqQhgyqmE?si=Bku6rbIuV7XT1lHQ" target="_blank" rel="noopener">Ver en YouTube ↗</a></div><div class="film-frame"><iframe src="https://www.youtube.com/embed/9rbqQhgyqmE" title="Maestría ronera de Ron Carúpano" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></div>
+      <div class="mastery-film searchable" data-search="video maestría ronera carmen equipo mezcla barricas">
+        <div class="film-heading"><div class="eyebrow">Maestría ronera</div><h3>El conocimiento también deja huella.</h3><p>Selección, memoria sensorial y mezcla convierten reservas distintas en una expresión precisa de la casa.</p></div>
+        <div class="film-frame"><iframe src="https://www.youtube.com/embed/9rbqQhgyqmE?rel=0" title="Maestría ronera de Ron Carúpano" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+      </div>
     </section>
 
     <section id="portafolio" class="section section-dark searchable" data-search="portafolio productos legendario xo zafra 21 18 12 6 carmen cristalino colección premium">
@@ -182,13 +197,11 @@
       </div>
 
       <div class="typography-system searchable" data-search="tipografía fuentes adobe garamond inter titulares textos datos powerpoint web">
-        <header class="typography-intro"><div><div class="eyebrow">05 · Sistema tipográfico</div><h3>Dos voces.<br>Un solo carácter.</h3></div><p>La tipografía es una disciplina, no una preferencia. <strong>Adobe Garamond Pro</strong> expresa la herencia; <strong>Inter</strong> hace que la organización entera pueda leer, comparar y ejecutar con claridad.</p></header>
-        <div class="font-specimens">
-          <article class="font-specimen garamond"><div class="font-meta"><span>Primaria / expresión</span><b>Adobe Garamond Pro</b></div><div class="alphabet">Aa</div><h4>El Caribe transforma el tiempo.</h4><p>ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz · 0123456789</p><dl><div><dt>Usar en</dt><dd>Portadas, titulares, citas, campañas y frases de alto impacto.</dd></div><div><dt>Por qué</dt><dd>Su contraste y tradición editorial conectan con el legado de la casa.</dd></div><div><dt>Regla</dt><dd>Pocas palabras, gran escala y espacio generoso.</dd></div></dl></article>
-          <article class="font-specimen inter"><div class="font-meta"><span>Secundaria / claridad</span><b>Inter</b></div><div class="alphabet">Aa</div><h4>Información precisa en cada punto de contacto.</h4><p>ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>abcdefghijklmnñopqrstuvwxyz · 0123456789</p><div class="weight-row"><b>Regular 400</b><b>Medium 500</b><b>Semibold 600</b><b>Bold 700</b></div><dl><div><dt>Usar en</dt><dd>Cuerpo, navegación, tablas, datos, pies, UI y documentos internos.</dd></div><div><dt>Por qué</dt><dd>Es legible, contemporánea, completa y consistente entre web y Office.</dd></div><div><dt>Regla</dt><dd>Nunca sustituir por Calibri o mezclar con otras sans serif.</dd></div></dl></article>
-        </div>
-        <div class="type-application"><div class="type-application-copy"><span>Ejemplo de jerarquía</span><h4>Una reserva<br>de Otro Nivel.</h4><p>Una idea principal en Garamond. Todo lo que informa, orienta o prueba, en Inter.</p><a class="button type-download" href="assets/downloads/ron-carupano-tipografia-inter.zip" download>Descargar Inter + licencia</a></div><div class="type-scale"><div><small>DISPLAY · GARAMOND 64</small><strong>Carácter que permanece.</strong></div><div><small>TÍTULO · GARAMOND 40</small><b>La máxima expresión del tiempo.</b></div><div><small>SUBTÍTULO · INTER 600 / 22</small><em>Complejidad, equilibrio y elegancia venezolana.</em></div><div><small>CUERPO · INTER 400 / 17</small><p>Reservas seleccionadas y mezcladas con precisión para revelar profundidad sin perder armonía.</p></div><div><small>DATO · INTER 600 / 12</small><code>HASTA 21 AÑOS · 40° G.L.</code></div></div></div>
-        <div class="type-rules"><article><span>01</span><strong>Una función por familia</strong><p>Garamond expresa. Inter explica. No intercambiar sus papeles.</p></article><article><span>02</span><strong>Jerarquía antes que tamaño</strong><p>Contraste de familia, peso y espacio antes de añadir estilos.</p></article><article><span>03</span><strong>Sin sustituciones silenciosas</strong><p>Instalar Inter en todos los equipos y documentos corporativos.</p></article><article><span>04</span><strong>Consistencia multicanal</strong><p>La misma lógica aplica en web, PPT, social, trade y documentos.</p></article></div>
+        <header class="typography-intro"><div class="eyebrow">Sistema tipográfico</div><h3>La herencia habla.<br>La información respira.</h3><p>Dos familias, dos trabajos claramente distintos.</p></header>
+        <article class="type-poster garamond-poster"><div class="type-poster-name"><span>01 · PRIMARIA</span><strong>Adobe Garamond Pro</strong><small>Titulares · citas · campañas</small></div><div class="type-poster-glyphs" aria-label="Muestra de Adobe Garamond Pro">Aa<br><span>CARÚPANO</span></div><div class="type-poster-example"><b>El tiempo<br>deja carácter.</b><p>Usar en pocas palabras, a gran escala y con espacio generoso.</p></div></article>
+        <article class="type-poster inter-poster"><div class="type-poster-name"><span>02 · SECUNDARIA</span><strong>Inter</strong><small>Texto · datos · navegación · Office</small></div><div class="type-poster-glyphs" aria-label="Muestra de Inter">Aa<br><span>ABCDEFGHIJKLMNÑOPQRSTUVWXYZ<br>0123456789</span></div><div class="type-poster-example"><b>Claridad en cada<br>punto de contacto.</b><div class="weight-row"><i>Regular 400</i><i>Medium 500</i><i>Semibold 600</i><i>Bold 700</i></div></div></article>
+        <div class="type-composition"><div><span>GARAMOND / IDEA</span><h4>Una reserva<br>de Otro Nivel.</h4></div><div><span>INTER / INFORMACIÓN</span><h5>Complejidad, equilibrio y elegancia venezolana.</h5><p>Reservas seleccionadas y mezcladas con precisión para revelar profundidad sin perder armonía.</p><code>HASTA 21 AÑOS · 40° G.L.</code></div></div>
+        <div class="type-actions"><p><strong>Regla simple:</strong> Garamond expresa. Inter explica.</p><a class="button type-download" href="assets/downloads/ron-carupano-tipografia-inter.zip" download>Descargar Inter + licencia</a></div>
       </div>
 
       <div class="usage-section">
@@ -204,9 +217,9 @@
       </div>
 
       <div class="palette-block">
-        <div class="palette-header"><div><div class="eyebrow">Paleta de marca</div><h3>Profundidad, luz y materia.</h3></div><p>Los tonos oscuros construyen prestigio; el dorado aporta herencia y detalle; el marfil da respiración; los acentos ámbar conectan con el líquido.</p></div>
+        <div class="palette-header"><div><div class="eyebrow">Paleta oficial</div><h3>Los colores definidos por el manual.</h3></div><p>Pantones y mezclas CMYK tomados de la página 24 del Manual de Marca Ron Carúpano 2023. El valor HEX es una equivalencia digital de referencia.</p></div>
         <div id="color-grid" class="color-grid"></div>
-        <div class="art-direction"><article class="art-card water"><img src="assets/images/editorial/04062026-DSC04128.webp" alt="Ron Carúpano junto a un manantial"><div><span>ORIGEN / AGUA</span><strong>La pureza también<br>construye carácter.</strong><p>Entorno real, agua en movimiento y producto integrado; nunca pegado sobre una escena.</p></div></article><article class="art-card coast"><img src="assets/images/editorial/05062026-DSC04549.webp" alt="Ron Carúpano Cristalino frente al Caribe"><div><span>PRODUCTO / CARIBE</span><strong>Claro a la vista.<br>Complejo en esencia.</strong><p>Color de producto, horizonte y materia natural construyen una historia específica.</p></div></article><article class="art-card editorial"><img src="assets/images/editorial/19062026-DSC07487.webp" alt="Ron Carúpano Reserva 18 en bodegón editorial"><div><span>EDITORIAL / RITUAL</span><strong>El tiempo se sirve<br>con intención.</strong><p>Luz controlada, props con significado y paleta conectada con la etiqueta.</p></div></article></div>
+        <div class="art-direction"><article class="art-card water"><img src="assets/images/editorial/04062026-DSC04128.webp" alt="Ron Carúpano junto a un manantial"><div><span>ORIGEN / AGUA</span><strong>Pureza</strong><p>Entorno real y producto integrado.</p></div></article><article class="art-card coast"><img src="assets/images/editorial/05062026-DSC04549.webp" alt="Ron Carúpano Cristalino frente al Caribe"><div><span>PRODUCTO / CARIBE</span><strong>Origen</strong><p>Horizonte, luz y materia natural.</p></div></article><article class="art-card editorial"><img src="assets/images/editorial/19062026-DSC07487.webp" alt="Ron Carúpano Reserva 18 en bodegón editorial"><div><span>EDITORIAL / RITUAL</span><strong>Intención</strong><p>Servicio, detalle y color de producto.</p></div></article></div>
       </div>
     </section>
 
@@ -282,7 +295,7 @@
       </div>
     </section>
 
-    <section class="awards-banner searchable" data-search="premios medallas reconocimientos internacional master oro doble oro"><div><span class="eyebrow">Reconocimiento internacional</span><strong>100+</strong><h2>medallas que convierten la excelencia en evidencia.</h2><p>Más de dos décadas de premios en certámenes especializados respaldan la consistencia del portafolio y la maestría de la casa.</p><a class="button primary" href="reconocimientos.html">Explorar reconocimientos</a></div><div class="award-orbits" aria-hidden="true"><i>MASTER</i><i>DOBLE ORO</i><i>ORO</i></div></section>
+    <section class="awards-banner searchable" data-search="premios medallas reconocimientos internacional master oro doble oro"><div><span class="eyebrow">Reconocimiento internacional</span><strong>100+</strong><h2>medallas convierten la excelencia en evidencia.</h2><p>Más de dos décadas de premios en certámenes especializados respaldan la consistencia del portafolio y la maestría de la casa.</p><div class="award-actions"><a class="button primary" href="reconocimientos.html">Explorar reconocimientos</a><a class="button ghost" href="https://roncarupano.com/es/premios/" target="_blank" rel="noopener">Premios Ron Carúpano ↗</a></div></div><div class="award-orbits" aria-hidden="true"><i>MASTER</i><i>DOBLE<br>ORO</i><i>ORO</i></div></section>
 
     <section id="recursos" class="section section-dark searchable" data-search="recursos descargas biblioteca assets logos packshots plantillas redes sociales presentaciones trade mockups">
       <header class="section-heading light">
@@ -297,7 +310,7 @@
 
       <div class="resource-gallery">
         <article class="resource-item resource-feature identity" data-resource-category="identity">
-          <div class="resource-visual logo-suite"><div class="logo-stage dark"><img src="assets/brand-logos/ron-carupano-logo-dorado.webp" alt="Logotipo dorado de Ron Carúpano"></div><div class="logo-stage light"><img src="assets/brand-logos/ron-carupano-logo-negro-vertical.webp" alt="Logotipo negro vertical de Ron Carúpano"></div><div class="logo-rules"><span>Contraste</span><span>Proporción</span><span>Área libre</span></div></div>
+          <div class="resource-visual logo-suite"><div class="logo-stage dark"><img src="assets/brand-logos/ron-carupano-logo-dorado.webp" alt="Logotipo dorado de Ron Carúpano"></div><div class="logo-stage light"><img src="assets/brand-logos/ron-carupano-logo-negro-vertical.webp" alt="Logotipo negro vertical de Ron Carúpano"></div><div class="logo-rules"><span>Oscuro</span><span>Claro</span><span>Área de protección</span></div></div>
           <div class="resource-info"><span>Identidad · Descargable</span><h3>Paquete de logotipos</h3><p>Versiones dorada y negra vertical, listas para fondos oscuros, claros y dorados, con una guía rápida de uso incluida.</p><a class="resource-action" href="assets/downloads/ron-carupano-logotipos.zip" download>Descargar paquete <span aria-hidden="true">↓</span></a></div>
         </article>
 
@@ -317,13 +330,13 @@
         </article>
 
         <article class="resource-item resource-feature presentation" data-resource-category="presentation">
-          <div class="resource-visual deck-system"><div class="deck-slide cover"><small>MASTER DECK</small><strong>El Caribe transforma<br>el tiempo.</strong><img src="assets/images/products/legendario.webp" alt=""></div><div class="deck-stack"><div class="deck-slide light"><small>IDEA CENTRAL</small><strong>El origen es una ventaja.</strong></div><div class="deck-slide gold"><b>01</b><span>Divisor</span></div><div class="deck-slide dark"><small>PRODUCTO</small><strong>Carúpano 21</strong></div></div></div>
+          <div class="resource-visual deck-system"><div class="deck-slide cover"><small>MASTER DECK</small><strong>El Caribe transforma<br>el tiempo.</strong><img src="assets/images/editorial/05062026-DSC05306.webp" alt=""></div><div class="deck-stack"><div class="deck-slide light"><small>IDEA CENTRAL</small><strong>El origen es una ventaja.</strong></div><div class="deck-slide gold"><b>01</b><span>Divisor</span></div><div class="deck-slide dark"><small>PRODUCTO</small><strong>Carúpano 21</strong></div></div></div>
           <div class="resource-info"><span>Presentaciones · PowerPoint editable</span><h3>Master deck de marca</h3><p>Veinticuatro templates 16:9 de alto impacto para portadas, divisores, argumentos, imágenes, citas, productos, portafolio, pilares, datos, procesos, campañas, social media, planes de acción, agenda, equipos y cierres. Adobe Garamond Pro e Inter sostienen una jerarquía coherente; todo el contenido permanece editable.</p><a class="resource-action" href="assets/downloads/ron-carupano-master-deck.pptx" download>Descargar PowerPoint <span aria-hidden="true">↓</span></a></div>
         </article>
 
         <article class="resource-item resource-wide trade" data-resource-category="trade">
           <div class="resource-visual portfolio-display"><div class="display-header"><span>RON CARÚPANO</span><strong>OTRO NIVEL</strong></div><div class="display-zone prestige"><em>01 · Descubrimiento</em><div><img src="assets/images/products/legendario.webp" alt="Legendario"><img src="assets/images/products/xo.webp" alt="X.O."></div><p>Colección como foco visual y ancla de prestigio.</p></div><div class="display-zone core"><em>02 · Navegación</em><div><img src="assets/images/products/carupano-12.webp" alt="Carúpano 12"><img src="assets/images/products/carupano-18.webp" alt="Carúpano 18"><img src="assets/images/products/carupano-21.webp" alt="Carúpano 21"></div><p>Escalera de edad clara de izquierda a derecha.</p></div><div class="display-zone entry"><em>03 · Conversión</em><div><img src="assets/images/products/carupano-6.webp" alt="Carúpano 6"><img src="assets/images/products/cristalino.webp" alt="Cristalino"></div><p>Versatilidad, mezcla y entrada al portafolio.</p></div></div>
-          <div class="resource-info"><span>Trade · Arquitectura de exhibición</span><h3>El anaquel debe explicar el portafolio en tres segundos.</h3><p>La colección atrae, la escalera de reservas organiza y las expresiones versátiles convierten. La altura, el orden y los mensajes responden a una jerarquía concreta, no a una fila indiferenciada de botellas.</p><a class="resource-action" href="#portafolio">Revisar arquitectura del portafolio <span aria-hidden="true">→</span></a></div>
+          <div class="resource-info"><span>Trade · Arquitectura de exhibición</span><h3>El anaquel debe explicar el portafolio en tres segundos.</h3><p>La colección atrae, los añejos 6 y 12 ganan caras y el resto del portafolio mantiene una lectura ordenada, siguiendo el manual de marca.</p><a class="resource-action" href="trade.html">Abrir guía de anaquel e in-store <span aria-hidden="true">→</span></a></div>
         </article>
 
         <article class="resource-item resource-wide social" data-resource-category="social">
