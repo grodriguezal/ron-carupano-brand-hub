@@ -96,3 +96,39 @@
   .hero-actions .button { width: 100%; }
   .github-panel .button { width: 100%; }
 }
+
+/* Portafolio — tratamiento óptico unificado para todos los packshots */
+.product-image {
+  height: 340px;
+  min-height: 340px;
+  aspect-ratio: 4 / 5;
+  align-items: flex-end;
+  isolation: isolate;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: none;
+  padding: 16px 12px 0;
+  object-fit: contain;
+  object-position: 50% 100%;
+  filter: drop-shadow(0 22px 24px rgba(0, 0, 0, .42));
+  transform-origin: 50% 100%;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.product-card:hover .product-image img,
+.product-card:focus-within .product-image img {
+  transform: scale(1.025);
+  filter: drop-shadow(0 28px 30px rgba(0, 0, 0, .5));
+}
+
+@media (max-width: 720px) {
+  .product-image {
+    height: 310px;
+    min-height: 310px;
+  }
+}
