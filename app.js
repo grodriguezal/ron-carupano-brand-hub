@@ -52,8 +52,8 @@ function renderColors(colors) {
     return `
       <button class="color-chip ${dark ? 'light-text' : 'dark-text'}" style="background:${color.hex}" data-copy="${color.hex}" type="button" aria-label="Copiar ${color.hex}">
         <span class="copy">Copiar</span>
-        <span><strong>${color.name}</strong><small>${color.use}</small></span>
-        <code>${color.hex}</code>
+        <span><strong>${color.name}</strong><small>${color.use}</small><span class="color-spec"><b>${color.pantone}</b><b>CMYK ${color.cmyk}</b></span></span>
+        <code>${color.hex} · digital</code>
       </button>`;
   }).join('');
 
@@ -191,6 +191,26 @@ function setupPersonality() {
   }));
 }
 
+function setupAlchemy() {
+  const tabs = $$('[data-alchemy]');
+  if (!tabs.length) return;
+  const items = {
+    microclima: ['01 / ENTORNO', 'Microclima excepcional', 'Baja altitud, humedad y brisas del Caribe intensifican el intercambio entre el destilado y el roble.', 'El Caribe acelera la transformación; la maestría decide el equilibrio.', 'assets/images/editorial/05062026-DSC05306.webp', 'Ron Carúpano Reserva 18 en el entorno costero de Macarapana'],
+    agua: ['02 / PUREZA', 'Agua pura de manantial', 'El agua utilizada por la destilería proviene de un manantial y protege el perfil final de olores o sabores indeseados.', 'La pureza no es un adorno narrativo: es parte de la materia del ron.', 'assets/images/editorial/04062026-DSC04128.webp', 'Ron Carúpano junto al agua de manantial'],
+    cana: ['03 / MATERIA', 'Alcohol de caña de azúcar', 'La alta sacarosa de la caña permite obtener una melaza de calidad para construir destilados expresivos.', 'Una base precisa permite que el tiempo y la madera desarrollen complejidad.', 'assets/images/editorial/05062026-DSC04752.webp', 'Ron Carúpano en el paisaje costero venezolano'],
+    maestria: ['04 / CRITERIO', 'Maestría + DOC', 'Más de 260 años de conocimiento y la Denominación de Origen Controlada Ron de Venezuela sostienen un estándar verificable.', 'La naturaleza aporta potencial. El equipo ronero le da dirección.', 'assets/images/editorial/19062026-DSC07268.webp', 'Ron Carúpano en una composición editorial de servicio']
+  };
+  const fields = ['#alchemy-number', '#alchemy-title', '#alchemy-description', '#alchemy-proof', '#alchemy-image'];
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(item => item.setAttribute('aria-selected', String(item === tab)));
+    const values = items[tab.dataset.alchemy];
+    fields.slice(0, 4).forEach((selector, index) => $(selector).textContent = values[index]);
+    const image = $(fields[4]);
+    image.src = values[4];
+    image.alt = values[5];
+  }));
+}
+
 function setupMenu() {
   const button = $('.menu-button');
   button.addEventListener('click', () => {
@@ -293,6 +313,7 @@ setupLogoThemes();
 setupResourceFilters();
 setupToggles();
 setupPersonality();
+setupAlchemy();
 setupMenu();
 setupNavigationObserver();
 setupSearch();
