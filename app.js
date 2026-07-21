@@ -317,3 +317,15 @@ setupAlchemy();
 setupMenu();
 setupNavigationObserver();
 setupSearch();
+document.querySelectorAll('[data-kv-carousel]').forEach((carousel) => {
+  const slides = [...carousel.querySelectorAll('.kv-slide')];
+  const count = carousel.querySelector('[data-kv-count]');
+  let current = 0;
+  const show = (next) => {
+    current = (next + slides.length) % slides.length;
+    slides.forEach((slide, index) => slide.classList.toggle('active', index === current));
+    if (count) count.textContent = `${current + 1} / ${slides.length}`;
+  };
+  carousel.querySelector('[data-kv-prev]')?.addEventListener('click', () => show(current - 1));
+  carousel.querySelector('[data-kv-next]')?.addEventListener('click', () => show(current + 1));
+});
