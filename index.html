@@ -143,9 +143,9 @@
           <h3>Escudo + logotipo</h3>
           <p>La versión horizontal es la firma prioritaria. El escudo y “RON CARÚPANO” se mantienen unidos, alineados y con sus proporciones originales.</p>
           <div class="theme-switch" role="group" aria-label="Cambiar fondo del logotipo">
-            <button class="active" data-logo-theme="dark" data-logo-src="https://roncarupano.com/wp-content/uploads/2024/09/Ron-Carupano-Logo-gold.png.webp">Oscuro</button>
-            <button data-logo-theme="light" data-logo-src="https://roncarupano.com/wp-content/uploads/2024/10/Logo-Ron-Carupano-Negrovertical.png.webp">Claro</button>
-            <button data-logo-theme="gold" data-logo-src="https://roncarupano.com/wp-content/uploads/2024/10/Logo-Ron-Carupano-Negrovertical.png.webp">Dorado</button>
+            <button type="button" class="active" data-logo-theme="dark" data-logo-src="assets/brand-logos/ron-carupano-logo-dorado.webp">Oscuro</button>
+            <button type="button" data-logo-theme="light" data-logo-src="assets/brand-logos/ron-carupano-logo-negro-vertical.webp">Claro</button>
+            <button type="button" data-logo-theme="gold" data-logo-src="assets/brand-logos/ron-carupano-logo-negro-vertical.webp">Dorado</button>
           </div>
         </div>
       </div>
@@ -272,38 +272,48 @@
       </header>
 
       <div class="resource-filter" role="group" aria-label="Filtrar recursos">
-        <button class="active" data-resource-filter="all">Todos</button><button data-resource-filter="identity">Identidad</button><button data-resource-filter="social">Social</button><button data-resource-filter="presentation">Presentaciones</button><button data-resource-filter="trade">Trade</button>
+        <button type="button" class="active" data-resource-filter="all" aria-pressed="true">Todos</button><button type="button" data-resource-filter="identity" aria-pressed="false">Identidad</button><button type="button" data-resource-filter="social" aria-pressed="false">Social</button><button type="button" data-resource-filter="presentation" aria-pressed="false">Presentaciones</button><button type="button" data-resource-filter="trade" aria-pressed="false">Trade</button>
       </div>
 
       <div class="resource-gallery">
-        <article class="resource-item identity" data-resource-category="identity">
-          <div class="resource-visual logo-pack"><img src="https://roncarupano.com/wp-content/uploads/2024/09/Ron-Carupano-Logo-gold.png.webp" alt="Logotipo Ron Carúpano"></div>
-          <div class="resource-info"><span>Identidad</span><h3>Paquete de logotipos</h3><p>Versiones principal, negativa, monocromática y vertical.</p><a href="https://roncarupano.com/wp-content/uploads/2024/09/Ron-Carupano-Logo-gold.png.webp" target="_blank" rel="noopener">Abrir recurso</a></div>
+        <article class="resource-item resource-feature identity" data-resource-category="identity">
+          <div class="resource-visual logo-suite"><div class="logo-stage dark"><img src="assets/brand-logos/ron-carupano-logo-dorado.webp" alt="Logotipo dorado de Ron Carúpano"></div><div class="logo-stage light"><img src="assets/brand-logos/ron-carupano-logo-negro-vertical.webp" alt="Logotipo negro vertical de Ron Carúpano"></div><div class="logo-rules"><span>Contraste</span><span>Proporción</span><span>Área libre</span></div></div>
+          <div class="resource-info"><span>Identidad · Descargable</span><h3>Paquete de logotipos</h3><p>Versiones dorada y negra vertical, listas para fondos oscuros, claros y dorados, con una guía rápida de uso incluida.</p><a class="resource-action" href="assets/downloads/ron-carupano-logotipos.zip" download>Descargar paquete <span aria-hidden="true">↓</span></a></div>
         </article>
 
-        <article class="resource-item social" data-resource-category="social">
-          <div class="resource-visual social-mockup"><div class="social-frame"><span>RON CARÚPANO</span><strong>El Caribe<br>transforma<br>el tiempo.</strong><img src="assets/images/products/carupano-21.webp" alt=""></div><div class="social-frame light"><span>RITUALES</span><strong>Una copa.<br>Otra dimensión.</strong><img src="https://roncarupano.com/wp-content/uploads/2026/03/ron-Carupano-Cristalino-premium-rum.png.webp" alt=""></div></div>
-          <div class="resource-info"><span>Social</span><h3>Sistema de publicaciones</h3><p>Arquitecturas para producto, rituales, premios, ocasiones y educación.</p><a href="#voz">Ver principios</a></div>
+        <article id="social-system" class="resource-item resource-wide social" data-resource-category="social">
+          <div class="resource-visual social-system">
+            <div class="social-grid" aria-label="Ejemplo de grilla editorial de seis publicaciones">
+              <div class="social-post product"><small>PRODUCTO</small><strong>21 años<br>de profundidad.</strong><img src="assets/images/products/carupano-21.webp" alt=""></div>
+              <div class="social-post ritual"><small>RITUAL</small><strong>El tiempo<br>se sirve.</strong><span class="ritual-mark">01</span></div>
+              <div class="social-post occasion"><small>OCASIÓN</small><strong>La noche tiene<br>otra dimensión.</strong></div>
+              <div class="social-post education"><small>CULTURA</small><strong>Lo que el clima<br>le da a la madera.</strong><span class="line-art">1762</span></div>
+              <div class="social-post light"><small>COCTELERÍA</small><strong>Claro a la vista.<br>Complejo en esencia.</strong><img src="assets/images/products/cristalino.webp" alt=""></div>
+              <div class="social-post legacy"><small>LEGADO</small><strong>La maestría<br>deja huella.</strong><img src="assets/images/products/carmen.webp" alt=""></div>
+            </div>
+            <div class="social-cadence"><span><b>40%</b> Producto</span><span><b>20%</b> Cultura</span><span><b>20%</b> Ocasión</span><span><b>20%</b> Ritual</span></div>
+          </div>
+          <div class="resource-info"><span>Social · Sistema editorial</span><h3>Una grilla con ritmo, no seis piezas aisladas.</h3><p>El sistema alterna producto, cultura, ritual y ocasión. Mantiene una jerarquía fija —territorio, mensaje y firma— y cambia la intensidad visual para construir reconocimiento sin monotonía.</p><a class="resource-action" href="#voz">Consultar principios de voz <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="resource-item presentation" data-resource-category="presentation">
-          <div class="resource-visual deck-mockup"><div class="deck-cover"><small>RON CARÚPANO</small><strong>El arte de<br>transformar<br>el tiempo.</strong><span>Presentación corporativa</span></div><div class="deck-page"><span>01</span><h4>Origen vivo</h4><p>1762 · Hacienda Altamira · Macarapana</p><div class="deck-bottle"><img src="assets/images/products/legendario.webp" alt=""></div></div></div>
-          <div class="resource-info"><span>Presentaciones</span><h3>Master deck</h3><p>Portada, divisores, mensajes clave, producto y cierre institucional.</p><span class="resource-state">Estructura creada</span></div>
+        <article class="resource-item resource-feature presentation" data-resource-category="presentation">
+          <div class="resource-visual deck-system"><div class="deck-slide cover"><small>MASTER DECK</small><strong>El Caribe transforma<br>el tiempo.</strong><img src="assets/images/products/legendario.webp" alt=""></div><div class="deck-stack"><div class="deck-slide light"><small>IDEA CENTRAL</small><strong>El origen es una ventaja.</strong></div><div class="deck-slide gold"><b>01</b><span>Divisor</span></div><div class="deck-slide dark"><small>PRODUCTO</small><strong>Carúpano 21</strong></div></div></div>
+          <div class="resource-info"><span>Presentaciones · PowerPoint editable</span><h3>Master deck de marca</h3><p>Diez templates 16:9 para portadas, divisores, argumentos, imágenes, citas, productos, pilares, datos, procesos y cierres. Todo el contenido permanece editable.</p><a class="resource-action" href="assets/downloads/ron-carupano-master-deck.pptx" download>Descargar PowerPoint <span aria-hidden="true">↓</span></a></div>
         </article>
 
-        <article class="resource-item trade" data-resource-category="trade">
-          <div class="resource-visual trade-mockup"><div class="shelf"><div class="header-sign">OTRO NIVEL</div><div class="bottles"><img src="assets/images/products/carupano-6.webp" alt=""><img src="assets/images/products/carupano-12.webp" alt=""><img src="assets/images/products/carupano-18.webp" alt=""><img src="assets/images/products/carupano-21.webp" alt=""></div><div class="shelf-base">RON CARÚPANO · DESDE 1762</div></div></div>
-          <div class="resource-info"><span>Trade</span><h3>Exhibición de portafolio</h3><p>Jerarquía clara, navegación por nivel y presencia premium en anaquel.</p><span class="resource-state">Concepto visual</span></div>
+        <article class="resource-item resource-wide trade" data-resource-category="trade">
+          <div class="resource-visual portfolio-display"><div class="display-header"><span>RON CARÚPANO</span><strong>OTRO NIVEL</strong></div><div class="display-zone prestige"><em>01 · Descubrimiento</em><div><img src="assets/images/products/legendario.webp" alt="Legendario"><img src="assets/images/products/xo.webp" alt="X.O."></div><p>Colección como foco visual y ancla de prestigio.</p></div><div class="display-zone core"><em>02 · Navegación</em><div><img src="assets/images/products/carupano-12.webp" alt="Carúpano 12"><img src="assets/images/products/carupano-18.webp" alt="Carúpano 18"><img src="assets/images/products/carupano-21.webp" alt="Carúpano 21"></div><p>Escalera de edad clara de izquierda a derecha.</p></div><div class="display-zone entry"><em>03 · Conversión</em><div><img src="assets/images/products/carupano-6.webp" alt="Carúpano 6"><img src="assets/images/products/cristalino.webp" alt="Cristalino"></div><p>Versatilidad, mezcla y entrada al portafolio.</p></div></div>
+          <div class="resource-info"><span>Trade · Arquitectura de exhibición</span><h3>El anaquel debe explicar el portafolio en tres segundos.</h3><p>La colección atrae, la escalera de reservas organiza y las expresiones versátiles convierten. La altura, el orden y los mensajes responden a una jerarquía concreta, no a una fila indiferenciada de botellas.</p><a class="resource-action" href="#portafolio">Revisar arquitectura del portafolio <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="resource-item social" data-resource-category="social">
-          <div class="resource-visual campaign-mockup"><img src="https://roncarupano.com/wp-content/uploads/elementor/thumbs/Expresso-martini-qwhh4negw6sox1daw5w00ta0b933k6tapnrcn78xlg.jpg" alt="Martini espresso"><div><small>RON CARÚPANO</small><strong>La noche también<br>tiene profundidad.</strong><span>Coctelería · Reserva Exclusiva</span></div></div>
-          <div class="resource-info"><span>Campaña</span><h3>Key visual de ocasión</h3><p>Ejemplo de integración entre fotografía, mensaje, producto y jerarquía.</p><a href="https://roncarupano.com/es/cocteles/" target="_blank" rel="noopener">Ver inspiración</a></div>
+        <article class="resource-item resource-wide social" data-resource-category="social">
+          <div class="resource-visual occasion-system"><div class="occasion-kv night"><img src="https://roncarupano.com/wp-content/uploads/elementor/thumbs/Expresso-martini-qwhh4negw6sox1daw5w00ta0b933k6tapnrcn78xlg.jpg" alt="Martini espresso"><div><small>DESPUÉS DE CENA</small><strong>La noche también<br>tiene profundidad.</strong><span>Carúpano 21 · Espresso Martini</span></div></div><div class="occasion-kv table"><img src="https://roncarupano.com/wp-content/uploads/elementor/thumbs/L9A6846-e1772695801945-rk1unabpie2dvi2bg9p2qo68l9yxjjb2uugl31l990.jpg" alt="Cóctel servido en mesa"><div><small>ENCUENTRO</small><strong>Hay momentos<br>que merecen tiempo.</strong></div></div><div class="occasion-kv ritual"><img src="https://roncarupano.com/wp-content/uploads/elementor/thumbs/Ritual-Carupano-preium-rum-Ron-Carupano-1-rkbolwc58rqnxypkjtzw8m8r719dixlb4x0g6hzris.jpg" alt="Ritual Ron Carúpano"><div><small>DESCUBRIMIENTO</small><strong>Una copa.<br>Otra dimensión.</strong></div></div></div>
+          <div class="resource-info"><span>Campaña · Key visuals de ocasión</span><h3>La ocasión pone la emoción; el producto conserva la autoridad.</h3><p>Tres territorios aspiracionales —después de cena, encuentro y descubrimiento— combinan fotografía sensorial, un mensaje breve y una firma de producto discreta. La imagen abre la historia; la marca la hace propia.</p></div>
         </article>
 
-        <article class="resource-item identity" data-resource-category="identity">
-          <div class="resource-visual packshot-grid"><img src="assets/images/products/legendario.webp" alt=""><img src="assets/images/products/xo.webp" alt=""><img src="https://roncarupano.com/wp-content/uploads/2026/05/Carupano_Carmen-rron-carupano.png.webp" alt=""><img src="https://roncarupano.com/wp-content/uploads/2026/03/ron-Carupano-Cristalino-premium-rum.png.webp" alt=""></div>
-          <div class="resource-info"><span>Producto</span><h3>Packshots del portafolio</h3><p>Imágenes de producto para fondos claros, oscuros y composiciones editoriales.</p><a href="#portafolio">Explorar productos</a></div>
+        <article class="resource-item resource-feature identity" data-resource-category="identity">
+          <div class="resource-visual packshot-library"><div class="packshot-hero"><img src="assets/images/products/legendario.webp" alt="Packshot de Ron Carúpano Legendario"><span>COLECCIÓN</span></div><div class="packshot-rail"><img src="assets/images/products/xo.webp" alt="Packshot X.O."><img src="assets/images/products/carmen.webp" alt="Packshot Carmen"><img src="assets/images/products/carupano-21.webp" alt="Packshot Carúpano 21"><img src="assets/images/products/carupano-18.webp" alt="Packshot Carúpano 18"><img src="assets/images/products/carupano-12.webp" alt="Packshot Carúpano 12"><img src="assets/images/products/cristalino.webp" alt="Packshot Cristalino"><img src="assets/images/products/carupano-6.webp" alt="Packshot Carúpano 6"></div></div>
+          <div class="resource-info"><span>Producto · Descargable</span><h3>Biblioteca de packshots</h3><p>Portafolio ordenado por jerarquía, con archivos WebP de fondo limpio para composiciones digitales, presentaciones y piezas de trade.</p><a class="resource-action" href="assets/downloads/ron-carupano-packshots.zip" download>Descargar packshots <span aria-hidden="true">↓</span></a></div>
         </article>
       </div>
     </section>
