@@ -1,8 +1,7 @@
 {
   "meta": {
-    "version": "V.0",
-    "status": "Borrador de migración",
-    "source": "Manual de Marca Ron Carúpano, 2021",
+    "version": "Sprint 2",
+    "source": "Manual de Marca Ron Carúpano y sitio oficial",
     "updated": "Julio 2026"
   },
   "products": [
@@ -46,6 +45,19 @@
       "role": "Edición de añada para conocedores y ocasiones memorables."
     },
     {
+      "id": "carmen",
+      "name": "Ron Carúpano Carmen",
+      "shortName": "Carmen",
+      "category": "Ultra-premium",
+      "age": "Edición limitada",
+      "abv": "41.4° G.L.",
+      "image": "https://roncarupano.com/wp-content/uploads/2026/05/Carupano_Carmen-rron-carupano.png.webp",
+      "description": "Edición limitada concebida como tributo a Carmen López de Bastidas, primera mujer certificada como Maestra Ronera en Venezuela y figura esencial de la historia contemporánea de la casa.",
+      "tasting": "Ámbar cobrizo con destellos dorados y naranjas. Frutos confitados, madera moderada, almendras, chocolate negro y café; entrada vigorosa, balanceada y de retrogusto untuoso.",
+      "serve": "Vaso corto con hielo y un toque cítrico para resaltar dulzura y carácter.",
+      "role": "Expresión de autor que celebra la maestría, el liderazgo y el legado humano detrás de Ron Carúpano."
+    },
+    {
       "id": "carupano-21",
       "name": "Ron Carúpano 21",
       "shortName": "Carúpano 21",
@@ -85,6 +97,19 @@
       "role": "Expresión premium versátil para el anfitrión y el consumidor que profundiza en la categoría."
     },
     {
+      "id": "cristalino",
+      "name": "Ron Carúpano Cristalino",
+      "shortName": "Cristalino",
+      "category": "Premium",
+      "age": "Ron blanco añejo",
+      "abv": "46° G.L.",
+      "image": "https://roncarupano.com/wp-content/uploads/2026/03/ron-Carupano-Cristalino-premium-rum.png.webp",
+      "description": "Ron Blanco Premium de apariencia cristalina, con el alma y la complejidad de un ron añejo, envejecido en barricas de roble blanco americano sin reposición de mermas.",
+      "tasting": "Flores blancas, cítricos frescos, caramelo y roble americano. Textura sedosa y untuosa, dulzura de melaza, tonos afrutados y final elegante de permanencia media.",
+      "serve": "Ideal para un Daiquirí de perfil limpio, fresco y estructurado, o en coctelería de autor.",
+      "role": "Expresión contemporánea y disruptiva que amplía el territorio de coctelería premium de la marca."
+    },
+    {
       "id": "carupano-6",
       "name": "Ron Carúpano 6",
       "shortName": "Carúpano 6",
@@ -99,11 +124,11 @@
     }
   ],
   "colors": [
-    {"name": "Negro Carúpano", "hex": "#100C0A", "use": "Fondos principales y comunicación premium"},
-    {"name": "Dorado", "hex": "#A88650", "use": "Acentos, titulares y detalles de prestigio"},
-    {"name": "Marfil", "hex": "#F2EDE5", "use": "Fondos claros, texto sobre negro y respiración visual"},
-    {"name": "Marrón oscuro", "hex": "#493326", "use": "Texturas, materiales y profundidad"},
-    {"name": "Gris cálido", "hex": "#6F6D63", "use": "Información secundaria y aplicaciones neutrales"},
-    {"name": "Ámbar", "hex": "#A64B24", "use": "Acento inspirado en el líquido y el portafolio"}
+    {"name": "Negro Carúpano", "hex": "#100C0A", "use": "Fondos principales, lujo y profundidad"},
+    {"name": "Dorado Hacienda", "hex": "#A88650", "use": "Firma, detalles, reconocimientos y jerarquía"},
+    {"name": "Marfil Reserva", "hex": "#F2EDE5", "use": "Fondos editoriales, aire y contraste cálido"},
+    {"name": "Madera Altamira", "hex": "#493326", "use": "Materia, barrica, interiores y textura"},
+    {"name": "Gris Mineral", "hex": "#6F6D63", "use": "Información secundaria y aplicaciones neutrales"},
+    {"name": "Ámbar Carúpano", "hex": "#A64B24", "use": "Líquido, calidez, llamados y acentos sensoriales"}
   ]
 }

@@ -1,0 +1,98 @@
+/* V.0.1 — ajustes de presentación, accesibilidad y estado de la plataforma */
+
+:focus-visible {
+  outline: 3px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
+.button:focus-visible,
+.filter:focus-visible,
+.text-button:focus-visible,
+.dialog-close:focus-visible,
+.color-chip:focus-visible,
+.side-nav a:focus-visible {
+  border-radius: 10px;
+}
+
+.version-pill {
+  background: rgba(210, 181, 123, .08);
+}
+
+.notice-band {
+  position: relative;
+  overflow: hidden;
+}
+
+.notice-band::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 24%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.1));
+  pointer-events: none;
+}
+
+.strategy-intro .status-label,
+.github-panel .status-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 12px;
+  padding: 5px 9px;
+  border: 1px solid rgba(210,181,123,.28);
+  border-radius: 999px;
+  color: var(--gold-light);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.strategy-intro .status-label::before,
+.github-panel .status-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d3a84d;
+}
+
+.resource-grid article {
+  position: relative;
+}
+
+.resource-grid .tag {
+  letter-spacing: .08em;
+}
+
+.github-panel {
+  align-items: center;
+}
+
+.site-footer span {
+  letter-spacing: .04em;
+}
+
+.product-dialog[open] {
+  animation: dialog-in .22s ease-out;
+}
+
+@keyframes dialog-in {
+  from { opacity: 0; transform: translateY(12px) scale(.985); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+@media (max-width: 720px) {
+  .notice-band::after { display: none; }
+  .hero-actions .button { width: 100%; }
+  .github-panel .button { width: 100%; }
+}

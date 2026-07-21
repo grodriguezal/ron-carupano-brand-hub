@@ -1,4 +1,4 @@
-const state = { products: [], filter: 'all' };
+const state = { products: [], filter: 'all', lastProductTrigger: null };
 
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -13,7 +13,7 @@ async function loadData() {
     renderColors(data.colors);
   } catch (error) {
     console.error('No se pudo cargar brand.json:', error);
-    $('#product-grid').innerHTML = '<p class="load-error">No se pudo cargar el contenido. Abre el proyecto desde un servidor local o GitHub Pages.</p>';
+    $('#product-grid').innerHTML = '<p class="load-error">No se pudo cargar el contenido. Intenta recargar la página.</p>';
   }
 }
 
@@ -38,7 +38,10 @@ function renderProducts() {
   `).join('');
 
   $$('[data-product]', grid).forEach(button => {
-    button.addEventListener('click', () => openProduct(button.dataset.product));
+    button.addEventListener('click', () => {
+      state.lastProductTrigger = button;
+      openProduct(button.dataset.product);
+    });
   });
 }
 
@@ -94,13 +97,21 @@ function setupDialog() {
     const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
     if (outside) dialog.close();
   });
+  dialog.addEventListener('close', () => {
+    state.lastProductTrigger?.focus();
+  });
 }
 
 function setupFilters() {
   $$('.filter').forEach(button => {
+    button.setAttribute('aria-pressed', String(button.classList.contains('active')));
     button.addEventListener('click', () => {
-      $$('.filter').forEach(item => item.classList.remove('active'));
+      $$('.filter').forEach(item => {
+        item.classList.remove('active');
+        item.setAttribute('aria-pressed', 'false');
+      });
       button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
       state.filter = button.dataset.filter;
       renderProducts();
     });
@@ -109,11 +120,15 @@ function setupFilters() {
 
 function setupToggles() {
   $$('[data-toggle]').forEach(button => {
+    const target = document.getElementById(button.dataset.toggle);
+    const label = button.dataset.toggle === 'ritual' ? 'pasos' : 'checklist';
+    button.setAttribute('aria-controls', target.id);
+    button.setAttribute('aria-expanded', 'false');
+
     button.addEventListener('click', () => {
-      const target = document.getElementById(button.dataset.toggle);
       const opening = target.hidden;
       target.hidden = !opening;
-      button.firstChild.textContent = opening ? 'Ocultar ' : button.dataset.toggle === 'ritual' ? 'Ver pasos ' : 'Ver checklist ';
+      button.innerHTML = `${opening ? 'Ocultar' : 'Ver'} ${label} <span>→</span>`;
       button.setAttribute('aria-expanded', String(opening));
     });
   });
@@ -124,11 +139,21 @@ function setupMenu() {
   button.addEventListener('click', () => {
     const open = document.body.classList.toggle('menu-open');
     button.setAttribute('aria-expanded', String(open));
+    button.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
   });
   $$('.side-nav a').forEach(link => link.addEventListener('click', () => {
     document.body.classList.remove('menu-open');
     button.setAttribute('aria-expanded', 'false');
+    button.setAttribute('aria-label', 'Abrir menú');
   }));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && document.body.classList.contains('menu-open')) {
+      document.body.classList.remove('menu-open');
+      button.setAttribute('aria-expanded', 'false');
+      button.setAttribute('aria-label', 'Abrir menú');
+      button.focus();
+    }
+  });
 }
 
 function setupNavigationObserver() {
@@ -137,7 +162,12 @@ function setupNavigationObserver() {
   const observer = new IntersectionObserver(entries => {
     const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (!visible) return;
-    links.forEach(link => link.classList.toggle('active', link.getAttribute('href') === `#${visible.target.id}`));
+    links.forEach(link => {
+      const active = link.getAttribute('href') === `#${visible.target.id}`;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
   }, { rootMargin: '-20% 0px -65% 0px', threshold: [0, .15, .4] });
   sections.forEach(section => observer.observe(section));
 }
