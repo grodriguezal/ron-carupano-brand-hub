@@ -129,6 +129,7 @@
     {"name": "Marfil Reserva", "hex": "#F2EDE5", "use": "Fondos editoriales, aire y contraste cálido"},
     {"name": "Madera Altamira", "hex": "#493326", "use": "Materia, barrica, interiores y textura"},
     {"name": "Gris Mineral", "hex": "#6F6D63", "use": "Información secundaria y aplicaciones neutrales"},
-    {"name": "Ámbar Carúpano", "hex": "#A64B24", "use": "Líquido, calidez, llamados y acentos sensoriales"}
+    {"name": "Ámbar Carúpano", "hex": "#A64B24", "use": "Líquido, calidez, llamados y acentos sensoriales"},
+    {"name": "Azul Reserva 18", "hex": "#183653", "use": "Acento secundario para Reserva 18, información premium y contraste frío"}
   ]
 }

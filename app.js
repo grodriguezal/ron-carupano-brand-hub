@@ -173,6 +173,24 @@ function setupToggles() {
   });
 }
 
+function setupPersonality() {
+  const tabs = $$('[data-personality]');
+  if (!tabs.length) return;
+  const traits = {
+    segura: ['01', 'Segura', 'Habla desde hechos, experiencia y criterio. No necesita exagerar ni compararse para demostrar su valor.', '“Más de 260 años perfeccionando el tiempo.”', 'Superlativos vacíos, gritos y superioridad.'],
+    refinada: ['02', 'Refinada', 'Cuida la forma, el ritmo y el detalle. Convierte la sofisticación en una experiencia clara y accesible.', '“Complejidad, equilibrio y un final que permanece.”', 'Ornamento excesivo, rigidez y lenguaje pretencioso.'],
+    sensorial: ['03', 'Sensorial', 'Hace visible lo que se siente: madera, temperatura, textura, aroma, luz y permanencia.', '“Frutos confitados, roble y una entrada sedosa.”', 'Adjetivos genéricos que no permiten imaginar la experiencia.'],
+    generosa: ['04', 'Generosa', 'Comparte conocimiento y disfrute. Invita a descubrir sin convertir la experiencia en una prueba de estatus.', '“Una copa para conversar, descubrir y compartir.”', 'Exclusión, condescendencia o códigos sociales cerrados.'],
+    contemporanea: ['05', 'Contemporánea', 'Interpreta el legado desde el presente. Innova en ocasiones, formatos y cultura sin perder autenticidad.', '“Una tradición que sigue avanzando.”', 'Nostalgia inmóvil, modas oportunistas y recursos sin propósito.'],
+    venezolana: ['06', 'Venezolana', 'Expresa origen con seguridad y precisión: Hacienda Altamira, Caribe, caña, oficio y hospitalidad.', '“Hecho en Macarapana. Reconocido en el mundo.”', 'Folclor superficial, clichés o exageraciones patrióticas.']
+  };
+  const fields = ['#personality-number', '#personality-title', '#personality-description', '#personality-do', '#personality-dont'];
+  tabs.forEach(tab => tab.addEventListener('click', () => {
+    tabs.forEach(item => item.setAttribute('aria-selected', String(item === tab)));
+    traits[tab.dataset.personality].forEach((value, index) => $(fields[index]).textContent = value);
+  }));
+}
+
 function setupMenu() {
   const button = $('.menu-button');
   button.addEventListener('click', () => {
@@ -274,6 +292,7 @@ setupFilters();
 setupLogoThemes();
 setupResourceFilters();
 setupToggles();
+setupPersonality();
 setupMenu();
 setupNavigationObserver();
 setupSearch();
