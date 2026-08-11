@@ -2,7 +2,7 @@
   "meta": {
     "version": "Sprint 2",
     "source": "Manual de Marca Ron Carúpano y sitio oficial",
-    "updated": "Julio 2026"
+    "updated": "Agosto 2026"
   },
   "products": [
     {
@@ -32,17 +32,17 @@
       "role": "Expresión de refinamiento, legado familiar y profundidad sensorial."
     },
     {
-      "id": "zafra-1991",
-      "name": "Ron Carúpano Zafra 1991",
-      "shortName": "Zafra 1991",
+      "id": "reserva-1996",
+      "name": "Ron Carúpano Reserva 1996",
+      "shortName": "Reserva 1996",
       "category": "Prestige / Colección",
-      "age": "Reserva 1991",
+      "age": "Reservas desde 1996",
       "abv": "40° G.L.",
-      "image": "assets/images/products/zafra-1991.webp",
-      "description": "Edición especial creada a partir de madres de reservas de destilados embarrilados en 1991.",
-      "tasting": "Pastel de piña y coco, nueces, avellanas, almendras, naranja confitada y flores amarillas.",
-      "serve": "Copa balón, seco o con un cristal de hielo.",
-      "role": "Edición de añada para conocedores y ocasiones memorables."
+      "image": "https://roncarupano.com/wp-content/uploads/2024/09/Ron-Carupano-RESERVE-1996.png.webp",
+      "description": "Edición limitada elaborada con reservas privadas de familia añejadas en barricas selladas de roble blanco americano desde 1996, sin reposición de la merma. Solo 5.000 botellas por año.",
+      "tasting": "Ámbar oscuro con destellos anaranjados. Caramelo, frutas confitadas y maceradas, almendras, canela, sarrapia, coco, cacao, café, ahumado y caja de puros; profundo, equilibrado y de final prolongado.",
+      "serve": "Copa de cata o vaso corto con un cubo de hielo y un toque ahumado o cítrico.",
+      "role": "Puerta de entrada a la Colección Prestige y expresión de añada para conocedores y ocasiones excepcionales."
     },
     {
       "id": "carmen",
@@ -124,13 +124,61 @@
     }
   ],
   "colors": [
-    {"name": "Dorado", "pantone": "PANTONE 871 C", "cmyk": "44 · 45 · 74 · 17", "hex": "#84754E", "use": "Color primario, firma y acabados metalizados"},
-    {"name": "Gris oscuro", "pantone": "PANTONE 431 C", "cmyk": "66 · 52 · 44 · 17", "hex": "#5B6770", "use": "Color primario para aplicaciones sobrias"},
-    {"name": "Blanco", "pantone": "WHITE", "cmyk": "0 · 0 · 0 · 0", "hex": "#FFFFFF", "use": "Versión positiva, aire y contraste"},
-    {"name": "Plateado", "pantone": "PANTONE 877 C", "cmyk": "47 · 38 · 39 · 3", "hex": "#8A8D8F", "use": "Foil plateado y acabados metalizados"},
-    {"name": "Gris cálido", "pantone": "PANTONE 417 C", "cmyk": "57 · 48 · 58 · 22", "hex": "#65665C", "use": "Paleta secundaria y fondos neutrales"},
-    {"name": "Marrón oscuro", "pantone": "PANTONE 7533 C", "cmyk": "53 · 63 · 75 · 57", "hex": "#473729", "use": "Paleta secundaria, madera y profundidad"},
-    {"name": "Beige", "pantone": "PANTONE 4525 C", "cmyk": "23 · 23 · 56 · 0", "hex": "#C5B783", "use": "Paleta secundaria y fondos cálidos"},
-    {"name": "Negro", "pantone": "PANTONE BLACK C", "cmyk": "0 · 0 · 0 · 100", "hex": "#000000", "use": "Fondos, versión diapo y máximo contraste"}
+    {
+      "name": "Dorado",
+      "pantone": "PANTONE 871 C",
+      "cmyk": "44 · 45 · 74 · 17",
+      "hex": "#84754E",
+      "use": "Color primario, firma y acabados metalizados"
+    },
+    {
+      "name": "Gris oscuro",
+      "pantone": "PANTONE 431 C",
+      "cmyk": "66 · 52 · 44 · 17",
+      "hex": "#5B6770",
+      "use": "Color primario para aplicaciones sobrias"
+    },
+    {
+      "name": "Blanco",
+      "pantone": "WHITE",
+      "cmyk": "0 · 0 · 0 · 0",
+      "hex": "#FFFFFF",
+      "use": "Versión positiva, aire y contraste"
+    },
+    {
+      "name": "Plateado",
+      "pantone": "PANTONE 877 C",
+      "cmyk": "47 · 38 · 39 · 3",
+      "hex": "#8A8D8F",
+      "use": "Foil plateado y acabados metalizados"
+    },
+    {
+      "name": "Gris cálido",
+      "pantone": "PANTONE 417 C",
+      "cmyk": "57 · 48 · 58 · 22",
+      "hex": "#65665C",
+      "use": "Paleta secundaria y fondos neutrales"
+    },
+    {
+      "name": "Marrón oscuro",
+      "pantone": "PANTONE 7533 C",
+      "cmyk": "53 · 63 · 75 · 57",
+      "hex": "#473729",
+      "use": "Paleta secundaria, madera y profundidad"
+    },
+    {
+      "name": "Beige",
+      "pantone": "PANTONE 4525 C",
+      "cmyk": "23 · 23 · 56 · 0",
+      "hex": "#C5B783",
+      "use": "Paleta secundaria y fondos cálidos"
+    },
+    {
+      "name": "Negro",
+      "pantone": "PANTONE BLACK C",
+      "cmyk": "0 · 0 · 0 · 100",
+      "hex": "#000000",
+      "use": "Fondos, versión diapo y máximo contraste"
+    }
   ]
 }
