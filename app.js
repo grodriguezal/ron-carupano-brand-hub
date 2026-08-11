@@ -5,7 +5,7 @@ const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 async function loadData() {
   try {
-    const response = await fetch('data/brand.json');
+    const response = await fetch('data/brand.json?v=20260811-portfolio');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
     state.products = data.products;
