@@ -3,6 +3,9 @@ const state = { products: [], filter: 'all', lastProductTrigger: null };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
+const heroBottle = $('.hero-bottle');
+if (heroBottle) heroBottle.src = 'assets/images/editorial/hero-reserva-privada-wave.webp';
+
 async function loadData() {
   try {
     const response = await fetch('data/brand.json?v=20260811-portfolio');
