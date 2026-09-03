@@ -4,7 +4,7 @@ const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 const heroBottle = $('.hero-bottle');
-if (heroBottle) heroBottle.src = 'assets/images/editorial/hero-reserva-privada-wave.webp';
+if (heroBottle) heroBottle.src = 'assets/images/editorial/hero-reserva-privada-wave-v2.webp';
 
 async function loadData() {
   try {
