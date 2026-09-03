@@ -4,7 +4,20 @@ const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 
 const heroBottle = $('.hero-bottle');
-if (heroBottle) heroBottle.src = 'assets/images/editorial/hero-reserva-privada-wave-v2.webp';
+if (heroBottle) {
+  Promise.all(
+    [1, 2, 3, 4, 5, 6].map(part =>
+      fetch(`data/hero-wave/part${part}.txt?v=20260903-hero-fix`).then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.text();
+      })
+    )
+  ).then(parts => {
+    heroBottle.src = `data:image/webp;base64,${parts.join('')}`;
+  }).catch(error => {
+    console.error('No se pudo cargar la imagen principal:', error);
+  });
+}
 
 async function loadData() {
   try {
